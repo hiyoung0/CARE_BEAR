@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+#top {height:300px; background-image:linear-gradient(#cfdbf1,#d4d7eb);}
+#sub {width:100%; height:6500px; border-top:1px solid #361d61;}
+
+
+/* 구매하기 */
+
+#topbtn {position:fixed;
+         right:2%;
+         bottom:10px;
+         z-index:9999;
+         font-size:60px;
+         color:#361d61;
+         display:none;
+         }
+#purchase {width:1200px; height:800px; margin:50px auto 0;}
+
+/* 왼쪽박스_사진 */
+.picture {width:600px; height:800px; margin:0 auto; float:left;}
+
+.container {width:500px; height:500px; margin:10px auto 0;}
+.container img {width:100%; height:100%;}
+.container div:nth-of-type(2) {display:none;}
+.container div:nth-of-type(3) {display:none;}
+.container div:nth-of-type(4) {display:none;}
+.container div:nth-of-type(5) {display:none;}
+.container div:nth-of-type(6) {display:none;}
+.container div:nth-of-type(7) {display:none;}
+.container:before {content:"BEST"; border:0; background-color:#f0c4cc; padding:10px; position:absolute; color:#fff; font-family:"Noto Sans KR"; font-size:14px;}
+
+.smallpic {width:500px; height:250px; margin:20px auto; display:flex; flex-wrap:wrap;}
+.smallpic img {width:100px; height:100px; border:1px solid #ddd; margin:12px 0 0 20px; opacity:0.7;}
+.smallpic img:hover {cursor:zoom-in; opacity:1; border:1px solid #666;}
+/* //왼쪽 박스_사진 */
+
+/* 오른쪽박스_구매버튼 */
+.buy {width:600px; height:800px; margin:0 auto; float:right;}
+.buycontainer {font-family:"Noto Sans KR"; margin:30px 20px; color:#333; position:relative;}
+.buycontainer small, .buycontainer p{font-family: "noto-sans"; font-weight:500;}
+.buycontainer .price_sum {font-size:27px;}
+.buycontainer h3 {display:inline;}
+.buycontainer i {cursor:pointer; font-size:20px;}
+.buycontainer .fa-angle-up {display:none;}
+.overview {display:none;}
+
+input {width:80px; height:60px; margin:20px 0;}
+input:nth-of-type(1) {border-radius:10px 0 0 10px;}
+input:nth-of-type(2) {width:120px; text-align:center; font-size:18px;}
+input:nth-of-type(3) {border-radius:0 10px 10px 0;}
+
+button {width:150px; height:60px; cursor:pointer; font-family:"Noto Sans KR";font-weight:100; font-size:20px;  margin:20px 0 0 10px;}
+.bt1 {background-color:darkred; color:#fff;}
+.bt2 {background-color:#eee;}
+.bt3 {border:0; background:#fff; color:#ddd; width:100px; height:80px; position:absolute; top:-14px; right:-10px;}
+.bt3 i{font-size:50px;}
+.bt3 i:active {transform:scale(1.2); transition-duration:0.1s;
+    -webkit-transform:scale(1.2); -webkit-transition-duration:0.1s;}
+
+.heart {color:#eca8b4 !important;}
+/* //오른쪽박스_구매버튼 */
+/* //구매하기 */
+
+
+/* 상세페이지 */
+#pagebox {width:1200px; height:3000px; margin:0 auto;}
+
+#device1 {width:1200px; height:76px; border-bottom:1px solid #333;}
+#device1 a li {float:left; margin:10px 0 0 0; border:1px solid #333; padding:20px; width:200px; text-align:center; font-family:"Noto Sans KR"; border-radius:10px 10px 0 0 ;}
+#device1 a li:hover {cursor:pointer; background-color:#ddd;}
+
+.detail {width:1200px; height:3000px; margin:0 auto;        
+    text-align:left; 
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;
+    }
+#pagebox .detail {background-image:url("../img/sub/background.png");
+   /* background-attachment: fixed; */
+    background-repeat: none;
+    background-position: center;
+    }
+.detail h1 {text-align:center; margin:40px 0 40px; font-size:70px; animation-name:colorful; animation-iteration-count: infinite; animation-duration:3s;}
+
+@keyframes colorful {
+    0% {color:red}
+
+    35% {color:yellow;}
+
+    70% {color:skyblue;}
+
+    100% {color:red;}  
+}
+
+
+
+.detail img {display:block; margin:0 auto; width:500px; height:500px;}
+.detail p {text-align:center; font-size:40px;}
+.detail table {margin:0 auto;}
+.detail td {padding:0 0 0 20px;}
+
+#device2 {width:1200px; height:76px; border-bottom:1px solid #333;}
+#device2 a li {float:left; margin:10px 0 0 0; border:1px solid #333; padding:20px; width:200px; text-align:center; font-family:"Noto Sans KR"; border-radius:10px 10px 0 0 ;}
+#device2 a li:hover {cursor:pointer; background-color:#ddd;}
+
+
+.review {margin:0 auto; width:1200px; height:1000px;
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;}
+.review h2 {margin:80px 0 0 150px; font-size:50px;}
+.review small {font-size:18px;}
+
+.review ul {display:inline-block; margin:0 0 -30px 120px;}
+.review ul li { padding:0 10px; font-size:14px;
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;
+    float:left;}
+/* .review ul li:nth-of-type(1) {font-weight:bold;} */
+.review .bold {font-weight:bold;}
+.review ul li:hover {cursor:pointer;}
+
+
+.review button {font-size:12px; width:100px; height:30px;
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;
+    display:inline;
+    float:right;
+    margin-right:130px;}
+.review table {padding:20px; margin:0 auto; text-align:left;
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;
+    clear:both;
+    width:1000px;}
+.review td {border-bottom:1px solid #666; font-size:14px;}
+.review td {padding:10px 40px 10px 40px;}
+.review td:nth-of-type(3) {padding:10px 100px 10px 100px; cursor:pointer;}
+.review .b1 {text-align:center; background-color:#cfdbf1; display:none;}
+.review .b2 {text-align:center; background-color:#cfdbf1; display:none;}
+.review .b3 {text-align:center; background-color:#cfdbf1; display:none;}
+.review p {text-align:center; cursor:pointer;}
+
+#device3 {width:1200px; height:76px; border-bottom:1px solid #333;}
+#device3 a li {float:left; margin:10px 0 0 0; border:1px solid #333; padding:20px; width:200px; text-align:center; font-family:"Noto Sans KR"; border-radius:10px 10px 0 0 ;}
+#device3 a li:hover {cursor:pointer; background-color:#ddd;}
+
+.qna {margin:0 auto; width:1200px; height:800px;
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;}
+.qna h2 {margin:80px 0 0 150px; font-size:50px;}
+.qna small {font-size:18px;}
+.qna select {margin-left:875px;}
+.qna button {font-size:12px; width:100px; height:30px;
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;}
+.qna table {padding:20px; margin:0 auto; text-align:left;
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-style: normal; color:#333;
+    clear:both;
+    width:1000px;}
+.qna td {border-bottom:1px solid #666; font-size:14px;}
+.qna td {padding:10px 40px 10px 40px;}
+.qna td:nth-of-type(2) {font-weight: bold;}
+.qna td:nth-of-type(4) {padding:10px 60px; cursor:pointer;}
+.qna b {font-size:40px;}
+.qna div {text-align:center;}
+.qna p {text-align:center; cursor:pointer;}
+.qna .q1 {text-align:center; background-color:#cfdbf1; display:none;}
+.qna .q2 {text-align:center; background-color:#cfdbf1; display:none;}
+
+/* //상세페이지 */
